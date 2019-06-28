@@ -43,7 +43,7 @@ def bt_click2():
         print(linha)
 
 
-lb1 = Label(janela, text="INSERT")
+'''lb1 = Label(janela, text="INSERT")
 lb1.place(x=10, y=30)
 
 ed1 = Entry(janela, width=20)
@@ -51,7 +51,7 @@ ed1.place(x=10, y=50)
 
 bt1 = Button(janela, width=20, text="Inserir dado", command=bt_insertdb)
 bt1.place(x=200, y=45)
-
+'''
 ''' UF '''
 
 lb_selectUF = Label(janela, text="ESTADO(UF)")
@@ -60,7 +60,7 @@ lb_selectUF.place(x=10, y=100)
 ed_select = Entry(janela, width=20)
 ed_select.place(x=10, y=130)
 
-bt_select = Button(janela, width=20, text="Selecionar Estado (UF)",
+bt_select = Button(janela, width=20, text="Selecionar CNPJ's",
                    command=bt_selectdb)
 bt_select.place(x=200, y=125)
 
@@ -82,11 +82,14 @@ ed_select3.place(x=10, y=270)
 
 ''' DEV '''
 
+'''
 bt_all = Button(janela, width=20, text="Mostrar todos os dados",
                 command=bt_click2)
 bt_all.place(x=300, y=300)
+'''
 
 '''print(len(ed1.get()) == 0)'''
+
 
 janela.mainloop()
 
