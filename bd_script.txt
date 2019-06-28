@@ -1,42 +1,52 @@
-CREATE TABLE empresas.empresas_cnpj
+-- Table: empresas.teste_cnpj
+
+-- DROP TABLE empresas.teste_cnpj;
+
+CREATE TABLE empresas.teste_cnpj
 (
-  cnpj VARCHAR(1000)
-, matriz_filial VARCHAR(1000)
-, razao_social VARCHAR(1000)
-, nome_fantasia VARCHAR(1000)
-, situacao VARCHAR(1000)
-, data_situacao VARCHAR(1000)
-, motivo_situacao VARCHAR(1000)
-, nm_cidade_exterior VARCHAR(1000)
-, cod_pais VARCHAR(1000)
-, nome_pais VARCHAR(1000)
-, cod_nat_juridica VARCHAR(1000)
-, data_inicio_ativ VARCHAR(1000)
-, cnae_fiscal VARCHAR(1000)
-, tipo_logradouro VARCHAR(1000)
-, logradouro VARCHAR(1000)
-, numero VARCHAR(1000)
-, complemento VARCHAR(1000)
-, bairro VARCHAR(1000)
-, cep VARCHAR(1000)
-, uf VARCHAR(1000)
-, cod_municipio VARCHAR(1000)
-, municipio VARCHAR(1000)
-, ddd_1 VARCHAR(1000)
-, telefone_1 VARCHAR(1000)
-, ddd_2 VARCHAR(1000)
-, telefone_2 VARCHAR(1000)
-, ddd_fax VARCHAR(1000)
-, num_fax VARCHAR(1000)
-, email VARCHAR(1000)
-, qualif_resp VARCHAR(1000)
-, capital_social VARCHAR(1000)
-, porte VARCHAR(1000)
-, opc_simples VARCHAR(1000)
-, data_opc_simples VARCHAR(1000)
-, data_exc_simples VARCHAR(1000)
-, opc_mei VARCHAR(1000)
-, sit_especial VARCHAR(1000)
-, data_sit_especial VARCHAR(1000)
+    cnpj text COLLATE pg_catalog."default",
+    matriz_filial text COLLATE pg_catalog."default",
+    razao_social text COLLATE pg_catalog."default",
+    nome_fantasia text COLLATE pg_catalog."default",
+    situacao text COLLATE pg_catalog."default",
+    data_situacao text COLLATE pg_catalog."default",
+    motivo_situacao text COLLATE pg_catalog."default",
+    nm_cidade_exterior text COLLATE pg_catalog."default",
+    cod_pais text COLLATE pg_catalog."default",
+    nome_pais text COLLATE pg_catalog."default",
+    cod_nat_juridica text COLLATE pg_catalog."default",
+    data_inicio_ativ text COLLATE pg_catalog."default",
+    cnae_fiscal text COLLATE pg_catalog."default",
+    tipo_logradouro text COLLATE pg_catalog."default",
+    logradouro text COLLATE pg_catalog."default",
+    numero text COLLATE pg_catalog."default",
+    complemento text COLLATE pg_catalog."default",
+    bairro text COLLATE pg_catalog."default",
+    cep text COLLATE pg_catalog."default",
+    uf text COLLATE pg_catalog."default",
+    cod_municipio text COLLATE pg_catalog."default",
+    municipio text COLLATE pg_catalog."default",
+    ddd_1 text COLLATE pg_catalog."default",
+    telefone_1 text COLLATE pg_catalog."default",
+    ddd_2 text COLLATE pg_catalog."default",
+    telefone_2 text COLLATE pg_catalog."default",
+    ddd_fax text COLLATE pg_catalog."default",
+    num_fax text COLLATE pg_catalog."default",
+    email text COLLATE pg_catalog."default",
+    qualif_resp text COLLATE pg_catalog."default",
+    capital_social text COLLATE pg_catalog."default",
+    porte text COLLATE pg_catalog."default",
+    opc_simples text COLLATE pg_catalog."default",
+    data_opc_simples text COLLATE pg_catalog."default",
+    data_exc_simples text COLLATE pg_catalog."default",
+    opc_mei text COLLATE pg_catalog."default",
+    sit_especial text COLLATE pg_catalog."default",
+    data_sit_especial text COLLATE pg_catalog."default"
 )
-;
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE empresas.teste_cnpj
+    OWNER to postgres;
